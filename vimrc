@@ -539,7 +539,7 @@ endif
 
 " theme主题
 set background=dark
-colorscheme solarized
+colorscheme molokai
 set t_Co=256
 
 "colorscheme molokai
