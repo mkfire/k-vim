@@ -93,7 +93,7 @@ set t_ti= t_te=
 
 
 "- 则点击光标不会换,用于复制
-set mouse-=a             " 鼠标暂不启用, 键盘党....
+set mouse=a             " 鼠标暂不启用, 键盘党....
 " set mouse=a                 " Automatically enable mouse usage
 " set mousehide               " Hide the mouse cursor while typing
 
@@ -293,6 +293,7 @@ nnoremap gj j
 " F4 换行开关
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
+" F7 生成tags
 
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
@@ -320,6 +321,8 @@ set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
 au InsertLeave * set nopaste
 
 nnoremap <F6> :exec exists('syntax_on') ? 'syn off' : 'syn on'<CR>
+
+"nnoremap <F7> :exec ctags -R -f - . | tac > tags<CR>
 
 
 "Smart way to move between windows 分屏窗口移动
