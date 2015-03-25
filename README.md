@@ -1,18 +1,6 @@
 k-vim
 =======================
 
-> VERSION: 8.0
-
-> LAST_UPDATE_TIME: 2014-10-02
-
-> 本次更新: 更为强大的tab操作/更全面的自动补全
-
-
-
-详细 [更新日志](https://github.com/wklken/k-vim/blob/master/UPDATE_LOG.md)
-
-
-
 # 目标
 
 > Just a Better Vim Config. Keep it Simple.
@@ -30,6 +18,10 @@ k-vim
 PS: 服务器端不带插件`k-vim`的简化版本(curl直接设置vimrc即可), 有需要可以直接安装[vim-for-server](https://github.com/wklken/vim-for-server)
 
 ### k-vim使用说明
+
+  *星号/ g* 搜索当前光标所在单词 
+  yaw 复制光标所在单词
+  vim .vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
 
 1. 最好能熟练使用原生vim各类操作之后, 再来使用插件扩展
 
