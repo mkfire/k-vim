@@ -334,6 +334,7 @@ Bundle 'tomasr/molokai'
 Bundle 'scrooloose/nerdtree'
 map <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
+let NERDTreeChDirMode=1 "改变tree目录的同时改变工程的目录
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
 "let NERDTreeDirArrows=0
 "let g:netrw_home='~/bak'

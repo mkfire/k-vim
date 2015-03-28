@@ -1,1 +1,1 @@
-set guifont=Monaco\ 11
+set guifont=Monaco:h14
