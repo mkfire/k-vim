@@ -1,11 +1,7 @@
 "==========================================
-" Author:  wklken
+" Author:  Firemky
 " Version: 8.0
-" Email: wklken@yeah.net
-" BlogPost: http://wklken.me
 " ReadMe: README.md
-" Donation: http://www.wklken.me/pages/donation.html
-" Last_modify: 2014-10-02
 " Sections:
 "       -> Initial Plugin 加载插件
 "       -> General Settings 基础设置
