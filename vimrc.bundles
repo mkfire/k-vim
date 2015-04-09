@@ -26,6 +26,10 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 
+"c/c++函数提示，状态栏
+Bundle "mbbill/echofunc"
+
+
 "################### 基础 ######################
 
 " 多语言语法检查

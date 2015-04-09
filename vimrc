@@ -136,6 +136,7 @@ set scrolloff=7
 " 命令行（在状态行下）的高度，默认为1，这里是2
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
 " Always show the status line - use 2 lines for the status bar
+
 set laststatus=2
 
 "显示行号：
@@ -290,13 +291,15 @@ nnoremap gj j
 " F5 粘贴模式paste_mode开关,用于有格式的代码粘贴
 " F6 语法开关，关闭语法可以加快大文件的展示
 " F9 list
-" F8 tags
+" F8 tags  在当前目录生成tags
 
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
 
 noremap <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 set tags=../tags
+set tags=~/k-vim/stltags
+set tags=~/k-vim/systags
 set autochdir
 
 ""为方便复制，用<F2>开启/关闭行号显示:

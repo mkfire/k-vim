@@ -153,7 +153,7 @@ molokai主题
 
     想要修改终端配色为solarized可以参考 [这里](https://github.com/sigurdga/gnome-terminal-colors-solarized)
 
-    - Go语言不能自动补全/tagbar
+    - Go语言不能自动补全/tagbar /golang
 
     依赖 [gotags](https://github.com/jstemmer/gotags)和 [gocode](https://github.com/nsf/gocode), 需要安装配置好, 并-> `$GOPATH` -> `$PATH`, `which`命令能正确返回
 
@@ -235,6 +235,8 @@ molokai主题
     F5 set paste/nopaste,粘贴模式paste_mode开关,用于有格式的代码粘贴
     F6 syntax on/off,语法开关，关闭语法可以加快大文件的展示
 
+    F8 生成tags
+
     F9 tagbar
     F10 运行当前python
 
@@ -312,9 +314,6 @@ molokai主题
         11. python/ruby 等, 保存时自动去行尾空白
         12. 统一所有分屏打开的操作位v/s[nerdtree/ctrlspace] (特殊ctrlp ctrl+v/x)
 
-    废弃:
-    t         新起一行，下面，不进入插入模式
-    T         新起一行，上面
 
 
 ---------------------------------
@@ -943,26 +942,6 @@ thx a lot. 可以给我提pull request:)
 
 4. 插件挑选 [VimAwesome](http://vimawesome.com/)
 
-### Resources
 
-[链接](http://www.wklken.me/posts/2014/10/03/vim-resources.html)
 
-### Donation
-
-You can Buy me a coffee:)  [link](http://www.wklken.me/pages/donation.html)
-
-------------------------
-------------------------
-
-The End!
-
-wklken (凌岳/pythoner/vim党预备党员)
-
-Email: wklken@yeah.net
-
-Github: https://github.com/wklken
-
-Blog: [http://www.wklken.me](http://www.wklken.me)
-
-2013-06-11 于深圳
 
