@@ -298,8 +298,8 @@ noremap <F1> <Esc>"
 
 noremap <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 set tags=../tags
-set tags=~/k-vim/stltags
-set tags=~/k-vim/systags
+set tags+=~/k-vim/stltags
+set tags+=~/k-vim/systags
 set autochdir
 
 ""为方便复制，用<F2>开启/关闭行号显示:
@@ -530,7 +530,7 @@ nnoremap <buffer> <F10> :exec '!python' shellescape(@%, 1)<cr>
 if has("gui_running")
     set guifont=Monaco:h14
     if has("gui_gtk2")   "GTK2
-        set guifont=Monaco\ 12, Monospace\ 12
+        set guifont=Monaco\ 12
     endif
     set guioptions-=T
     set guioptions+=e
