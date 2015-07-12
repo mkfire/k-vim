@@ -3,15 +3,6 @@
 " Version: 8.0
 " ReadMe: README.md
 " Sections:
-"       -> Initial Plugin 加载插件
-"       -> General Settings 基础设置
-"       -> Display Settings 展示/排版等界面格式设置
-"       -> FileEncode Settings 文件编码设置
-"       -> Others 其它配置
-"       -> HotKey Settings  自定义快捷键
-"       -> FileType Settings  针对文件类型的设置
-"       -> Theme Settings  主题设置
-"       -> 插件配置和具体设置在vimrc.bundles中
 "==========================================
  
 "==========================================
@@ -177,9 +168,9 @@ set autoindent    " 打开自动缩进
 " never add copyindent, case error   " copy the previous indentation on autoindenting
 
 " tab相关变更
-set tabstop=4     " 设置Tab键的宽度        [等同的空格个数]
-set shiftwidth=4  " 每一次缩进对应的空格数
-set softtabstop=4 " 按退格键时可以一次删掉 4 个空格
+set tabstop=2     " 设置Tab键的宽度        [等同的空格个数]
+set shiftwidth=2  " 每一次缩进对应的空格数
+set softtabstop=2 " 按退格键时可以一次删掉 4 个空格
 set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop 按退格键时可以一次删掉 4 个空格
 set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键时，使用 Ctrl+V + Tab]
 set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
@@ -296,9 +287,7 @@ nnoremap gj j
 noremap <F1> <Esc>"
 
 noremap <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-set tags=../tags
-set tags+=~/k-vim/stltags
-set tags+=~/k-vim/systags
+set tags=/Users/meitu/platform/teamtalk/server/src/tags
 set autochdir
 
 ""为方便复制，用<F2>开启/关闭行号显示:
@@ -526,6 +515,8 @@ nnoremap <buffer> <F10> :exec '!python' shellescape(@%, 1)<cr>
 "==========================================
 
 " Set extra options when running in GUI mode
+" Sections:
+"==========================================
 if has("gui_running")
     set guifont=Monaco:h14
     if has("gui_gtk2")   "GTK2

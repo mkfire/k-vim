@@ -18,6 +18,8 @@ k-vim
 PS: 服务器端不带插件`k-vim`的简化版本(curl直接设置vimrc即可), 有需要可以直接安装[vim-for-server](https://github.com/wklken/vim-for-server)
 
 ### k-vim使用说明
+  Macvim 在console下输入,才能输入中文
+  defaults write org.vim.MacVim MMUseInlineIm 0
 
   *星号/ g* 搜索当前光标所在单词 
   yaw 复制光标所在单词
