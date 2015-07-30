@@ -27,10 +27,32 @@ Bundle 'gmarik/vundle'
 
 
 "c/c++函数提示，状态栏
-Bundle "mbbill/echofunc"
+"Bundle "mbbill/echofunc"
 
 
-Bundle "vim-scripts/c.vim"
+"自动单个c/c++文件编译运行，新建文件插入作者等
+"Bundle "vim-scripts/c.vim"
+"let g:C_Ctrl_j='off'
+"noremap   \a        :A<CR>
+
+" 函数文档生成
+Bundle "vim-scripts/DoxygenToolkit.vim"
+"doxygen toolkit
+let g:DoxygenToolkit_briefTag_pre="@brief  "
+let g:DoxygenToolkit_paramTag_pre="@param "
+let g:DoxygenToolkit_returnTag="@returns   "
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="Drunkedcat"
+let g:DoxygenToolkit_licenseTag="GPL 2.0"
+
+let g:DoxygenToolkit_authorName="firemky, qiuyonghuo@gmail.com"
+let s:licenseTag = "Copyright(C)\<enter>"
+let s:licenseTag = s:licenseTag . "For free\<enter>"
+let s:licenseTag = s:licenseTag . "All right reserved\<enter>"
+let g:DoxygenToolkit_licenseTag = s:licenseTag
+let g:DoxygenToolkit_briefTag_funcName="yes"
+let g:doxygen_enhanced_color=1
 
 "################### 基础 ######################
 

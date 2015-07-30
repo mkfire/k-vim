@@ -518,9 +518,9 @@ nnoremap <buffer> <F10> :exec '!python' shellescape(@%, 1)<cr>
 " Sections:
 "==========================================
 if has("gui_running")
-    set guifont=Monaco:h14
+    set guifont=Monaco:h13
     if has("gui_gtk2")   "GTK2
-        set guifont=Monaco\ 12
+        set guifont=Monaco\ 13
     endif
     set guioptions-=T
     set guioptions+=e

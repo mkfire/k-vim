@@ -21,7 +21,7 @@ PS: 服务器端不带插件`k-vim`的简化版本(curl直接设置vimrc即可),
   Macvim 在console下输入,才能输入中文
   defaults write org.vim.MacVim MMUseInlineIm 0
 
-  *星号/ g* 搜索当前光标所在单词 
+  *星号/ g* 搜索当前光标所在单词
   yaw 复制光标所在单词
   vim .vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
 
@@ -301,6 +301,10 @@ molokai主题
     ctrl+n    相对/绝对行号切换
     <enter>   normal模式下回车选中当前项
 
+    10.
+    \rr 编译运行c/c++
+    \nr 插件预先编辑好的文件内容
+
 
     更多优化:
         1. j/k 对于换行展示移动更友好
@@ -484,6 +488,7 @@ molokai主题
 
     同类插件 [tabular](https://github.com/godlygeek/tabular)
 
+
 > 快速移动
 
 1. ####位置跳转[Lokaltog/vim-easymotion](https://github.com/Lokaltog/vim-easymotion)
@@ -644,6 +649,10 @@ molokai主题
         [sd] ,h  查看文件编辑历史
 
     附:同类插件 [mbbill/undotree](https://github.com/mbbill/undotree)
+
+4. ####函数文档生成 [DoxKit](https://github.com/vim-scripts/DoxygenToolkit.vim)
+
+    :Dox
 
 > 显示增强
 
