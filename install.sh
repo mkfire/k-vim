@@ -47,9 +47,9 @@ cd $CURRENT_DIR/bundle/YouCompleteMe/
 
 if [ `which clang` ]   # check system clang
 then
-    bash -x install.sh --clang-completer --system-libclang   # use system clang
+    bash -x install.sh --clang-completer --system-libclang --gocode-completer   # use system clang
 else
-    bash -x install.sh --clang-completer
+    bash -x install.sh --clang-completer --gocode-completer
 fi
 
 

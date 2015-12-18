@@ -160,8 +160,8 @@ au FileType python let b:delimitMate_nesting_quotes = ['"']
 
 
 " 自动补全html/xml标签
-Bundle 'docunext/closetag.vim'
-let g:closetag_html_style=1
+"Bundle 'docunext/closetag.vim'
+"let g:closetag_html_style=1
 
 "################### 快速编码 ###################
 
@@ -176,8 +176,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 
 " 快速去行尾空格 [, + <Space>]
-Bundle 'bronson/vim-trailing-whitespace'
-map <leader><space> :FixWhitespace<cr>
+"Bundle 'bronson/vim-trailing-whitespace'
+"map <leader><space> :FixWhitespace<cr>
 
 " 快速赋值语句对齐
 Bundle 'junegunn/vim-easy-align'
@@ -256,13 +256,13 @@ let g:ctrlp_follow_symlinks=1
 
 
 " ctrlp插件1 - 不用ctag进行函数快速跳转
-Bundle 'tacahiroy/ctrlp-funky'
-nnoremap <Leader>fu :CtrlPFunky<Cr>
+"Bundle 'tacahiroy/ctrlp-funky'
+"nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
-nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
-let g:ctrlp_funky_syntax_highlight = 1
+"nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+"let g:ctrlp_funky_syntax_highlight = 1
 
-let g:ctrlp_extensions = ['funky']
+"let g:ctrlp_extensions = ['funky']
 
 
 
@@ -287,8 +287,8 @@ let g:gitgutter_highlight_lines = 1
 nnoremap <leader>gs :GitGutterToggle<CR>
 
 " edit history, 可以查看回到某个历史状态
-Bundle 'sjl/gundo.vim'
-nnoremap <leader>h :GundoToggle<CR>
+"Bundle 'sjl/gundo.vim'
+"nnoremap <leader>h :GundoToggle<CR>
 
 "################### 显示增强 ###################
 
@@ -335,14 +335,14 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " 代码缩进
 " https://github.com/nathanaelkane/vim-indent-guides
-"Bundle 'nathanaelkane/vim-indent-guides'
-"let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-"hi IndentGuidesOdd  guibg=red   ctermbg=3
-"hi IndentGuidesEven guibg=green ctermbg=4
-"hi IndentGuidesOdd  ctermbg=black
-"hi IndentGuidesEven ctermbg=darkgrey
+Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+hi IndentGuidesOdd  guibg=red   ctermbg=3
+hi IndentGuidesEven guibg=green ctermbg=4
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
 
 "################### 显示增强-主题 ###################"
 
@@ -492,6 +492,7 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 "au FileType go nmap <Leader>gd <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>jd <Plug>(go-def-split)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
+"let g:go_fmt_command = "goimports"
 
 
 "###### Markdown #########
